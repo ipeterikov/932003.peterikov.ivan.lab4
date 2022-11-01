@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    font-size: 16 px;
+    margin: 0;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    background-color: #e8ebf0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    z-index:10;
+    background-color: #507299;
+    height: 40px;
+    padding: 7px 15%;
+    width: 100%;
+}
+.container {
+    position: relative;
+    top:34px;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    max-width:1600px;
+    min-height: 90%;
+    justify-content: center;
+}
+
+.nav {
+    margin-top: 20px;
+    position: relative;
+    min-width: 180px; 
+    display: flex;
+    flex-wrap: wrap
+
+}
+
+.link {
+   padding: 10px 5px 10px 5px;
+}
+.link:hover {
+    background-color: #ccd6e6;
+  
+}
+.item
+{
+    border-bottom: 2px solid #d0d0d0;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: justify;
+    padding: 5px 10px;
+
+}
+.content {
+    position: relative;
+    max-width: 460px;
+    padding: 10px 12px;
+    color: black;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #d0d0d0;    
+    border-radius: 10px;
+    margin: 20px;
+}
+.rightBlocks
+{
+    position: fixed;
+    width: 200px;
+    right: calc(50% - 600px);
+}
+
+footer {
+    width: 100%;
+    padding: 7px 0;
+    margin: 40px 0 0 0;
+    text-align: center;
+    color:#8f8f8f;
+}
+a {
+    color: #2e5473;
+    text-decoration: none;
+}
+@media (max-width: 1160px) 
+{
+    .ads {display: none;}
+}
+@media (max-width: 745px) 
+{
+    .nav {
+    width: 420;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    .link {width: fit-content; margin: 0 7;}
+
+}
+@media (min-width: 745px) 
+{
+    .nav {
+    width: 200px;
+    flex-direction: column;
+    }
+    .link{
+    min-width: 180px; 
+    min-height: 40px;
+    }
+}
+.left
+{
+    text-align: left;
+}
+.include
+{
+    width:100%;
+    object-fit:scale-down;
+}
+.likeComment
+{
+    margin: 0 0 10px 0;
+    padding:5px;
+}
+.like
+{
+    float: left;
+}
+.comment
+{
+    float: right;
+}
+.item::selection {
+    color: #619e61;
+    background: #c8e0c9;
+}
+p
+{
+    background-color: #e7e7e7;
+}
